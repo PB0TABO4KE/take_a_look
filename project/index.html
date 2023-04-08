@@ -15,11 +15,56 @@
         </button>
     <div class="wrapper"></div>
 
-    <div class="modal-block">
+     <div class="modal-block">
         <div class="modal">
             <button class="modal-close btn"><i class="fa-solid fa-xmark"></i></button>
             
             <h2>Добавить котика</h2>
+
+            <form class="form" id="add">
+
+
+                <div>
+                    <label class="label" for="id">Введите id котика</label>
+                    <input class="input" type="number" id="id" placeholder="69">
+                </div>
+
+                <div>
+                    <label class="label" for="name">Введите имя котика</label>
+                    <input class="input" name="name" type="text" id="name" placeholder="Имя котика">
+                </div>
+
+                <div>
+                    <label class="label" for="image">Введите ссылку на картинку котика</label>
+                    <input class="input" type="url" id="image" name="image" placeholder="Фото котика">               
+                    </div>
+                <div>
+
+                <div>
+                    <label class="label" for="age">Введите возраст котика</label>
+                    <input class="input" type="number" id="age" name="age" min=1 max=40 placeholder="от 1 до 40">               
+                </div>
+
+                <div>
+                    <label class="label" for="rate">Введите рейтинг котика</label>
+                    <input class="input" type="number" name="rate" id="rate" min=1 max=5 placeholder="от 1 до 5">                
+                </div>
+               
+                <div>
+                    <label class="label" for="description">Введите описание котика</label>
+                    <textarea class="input descr" id="description" placeholder="Расскажите о котике"></textarea>
+                </div>
+
+                <div>
+                    <label class="label" for="favorite">Является ли котик любимым</label>
+                    <input class="checkbox" type="checkbox" name="favorite" id="favorite">
+                </div>
+                <div class="preview"></div>
+                <button type="submit">Добавить котика</button>          
+            </form>
+
+            
+            
         </div>
     </div>
      
