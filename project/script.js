@@ -1,4 +1,4 @@
-if (!pets) {
+if (!pets) { // срабатывает, если в локалсторадж нет pets//
 fetch(path +"/show")
     .then(function(res) {
         //console.log(res);//
@@ -10,7 +10,7 @@ fetch(path +"/show")
         console.log(data);
         if (data.length) {
             pets = data;
-            localStorage.setItem("band-cats", JSON.stringify(pets))
+            localStorage.setItem("band-cats", JSON.stringify(data)) // Раз уж котов не было, нужно сохранить их в локальное хранилище // 
             for (let pet of data) {
                 createCard(pet, block);}
         }

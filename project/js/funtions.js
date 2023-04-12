@@ -62,7 +62,12 @@ function createCard(pet, tag) {
         })
         localStorage.setItem("band-cats", JSON.stringify(pets));
     })
+
+
+  
 }
+
+
 
 /*
 function addCat () {

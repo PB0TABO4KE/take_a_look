@@ -18,7 +18,7 @@ let path = `https://cats.petiteweb.dev/api/single/${name}`;
 //JSON.pasrse(tring) => из строки объект//
  
 // Хранит информацию как строку // 
-let pets = localStorage.getItem("band_cats");
+let pets = localStorage.getItem("band-cats");
 if (pets) {
     try {
     pets = JSON.parse(pets);
@@ -31,4 +31,5 @@ if (pets) {
         pets = null;
     }
 }
-console.log("pets", pets);
+// console.log("pets", pets);
+// Выводит с консоль котов
