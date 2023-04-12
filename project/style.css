@@ -49,7 +49,7 @@ h2 {
     position: absolute;
     right: 67px;
     bottom: 15px;
-    color: #3E7D3E;
+    color: #2F5E5E;
     cursor: pointer;
 }
 
@@ -60,19 +60,11 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
 .card .card__trash_bucket {
     position: absolute;
     right: 41px;
     bottom: 15px;
-    color: #3E7D3E;
+    color: #9C4E4E;
     cursor: pointer;
 }
 
@@ -84,7 +76,7 @@ h2 {
 .card .pic {
     height: 100px;
     width: 100%;
-    background-color: springgreen;
+    background-color: #C8C8C8;
     background-image: url(https://images.dailyhive.com/20220825130446/toronto-raccoon.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -103,14 +95,14 @@ h2 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #2F5E5E;
+    background-color: #9C4E4E;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
 }
 
 .btn:hover {
-    color: springgreen;
+    color: #E0E0E0;
     transform: scale(1.11, 1.1);
  
 }
@@ -124,7 +116,7 @@ h2 {
 }
 
 .modal {
-    background-color: springgreen;
+    background-color: #799249;
     padding: 16px;
     border-radius: 8px;
     width: calc(100% - 100px);
@@ -163,29 +155,6 @@ align-items: center;
 }
 
 
-
-.more_info {
-    background-color: rgba(62,62,62, 0.80);
-    backdrop-filter: blur(3px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    }
-
-.more_info.active {
-        display: flex;    
-}
-
-.more_info_close {
-    position: absolute;
-    top: 15px;
-    right: 15px;  
-}
 
 .label {
     font-size: 15px;
@@ -238,9 +207,39 @@ textarea::placeholder {
 
 .preview {
     height: 200px;
-    background-color: springgreen;
+    background-color: #CACACA;
     border-radius: 8px;
     background-image: url(images/default.png);
     background-size: cover;
     background-position: center;
+}
+
+.more_info {
+    background-color: rgba(62,62,62, 0.80);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+
+.more_info.active {
+        display: flex;    
+}
+
+.more_info_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;  
+}
+
+.info_line {
+    border-radius: 8px;
+    background-color: #F8F8F8;
+    padding: 5px;
+    margin-top: 10px; 
 }
