@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #F0F0F0;
 }
 h2 {
     margin: 0;
@@ -17,7 +18,7 @@ h2 {
     align-content: flex-start;
 }
 .card {
-    background-color: brown;
+    background-color: #C8C8C8;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -25,14 +26,14 @@ h2 {
     align-items: center;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 0 15px limegreen;
+    box-shadow: 0 0 15px #9C4E4E;
     position: relative;
 }
 .card .like {
     position: absolute;
     right: 15px;
     bottom: 15px;
-    color: limegreen;
+    color: #3E7D3E;
     cursor: pointer;
 }
 
@@ -41,11 +42,37 @@ h2 {
     opacity: 0.85;
  }
 
+
+
+
+ .card .card__showmore {
+    position: absolute;
+    right: 67px;
+    bottom: 15px;
+    color: #3E7D3E;
+    cursor: pointer;
+}
+
+.card .card__showmore:hover {
+    transform: scale(1.11, 1.1);
+    opacity: 0.85;
+ }
+
+
+
+
+
+
+
+
+
+
+
 .card .card__trash_bucket {
     position: absolute;
     right: 41px;
     bottom: 15px;
-    color: limegreen;
+    color: #3E7D3E;
     cursor: pointer;
 }
 
@@ -76,7 +103,7 @@ h2 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: blueviolet;
+    background-color: #2F5E5E;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
@@ -124,6 +151,7 @@ display: none;
 justify-content: center;
 align-items: center;
 }
+
 .modal-block.active {
     display: flex;    
 }
@@ -132,6 +160,31 @@ align-items: center;
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+
+
+.more_info {
+    background-color: rgba(62,62,62, 0.80);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+
+.more_info.active {
+        display: flex;    
+}
+
+.more_info_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;  
 }
 
 .label {

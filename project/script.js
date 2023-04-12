@@ -20,17 +20,38 @@ fetch(path +"/show")
 // fetch(path + "/show")
 // .then(res => res.json())
 // .then(data => {console.log(data)})
+
+
+
+
+
+
+
 addBtn.addEventListener("click", e => {
     mdBox.classList.toggle("active");
 })
 mdClose.addEventListener("click", e => {
     mdBox.classList.remove("active");
 })
+
 mdBox.addEventListener("click", e => {
     if (e.target === e.currentTarget) {
         mdBox.classList.remove("active");   
     }
 });
+
+
+// Для закрывания попапа //
+// Закрываем по кнопке в окне
+mdMoreinfoClose.addEventListener("click", e => { 
+    mdMoreinfo.classList.remove("active");
+  })
+// Закрываем по клику за пределы окна
+  mdMoreinfo.addEventListener("click", e => {
+    if (e.target === e.currentTarget) {
+      mdMoreinfo.classList.remove("active");   
+    }
+  });
 
 
 addForm.elements.image.addEventListener("change", e => {

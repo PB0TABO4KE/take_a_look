@@ -2,6 +2,8 @@ const block = document.querySelector(".wrapper");
 const addBtn = document.querySelector(".add");
 const mdBox = document.querySelector(".modal-block");
 const mdClose = mdBox.querySelector(".modal-close");
+const mdMoreinfo = document.querySelector(".more_info"); // ищем модальное окно с информацией//
+const mdMoreinfoClose = mdMoreinfo.querySelector(".more_info_close");
 
 const addForm = document.forms.add;
 const prevTag = addForm.querySelector(".preview");
@@ -12,12 +14,10 @@ let path = `https://cats.petiteweb.dev/api/single/${name}`;
 
 
 
-
-//
 //JSON.stringify(obj) => из объекта строка//
 //JSON.pasrse(tring) => из строки объект//
- 
-// Хранит информацию как строку // 
+
+// localStorage Хранит информацию как строку // 
 let pets = localStorage.getItem("band-cats");
 if (pets) {
     try {
